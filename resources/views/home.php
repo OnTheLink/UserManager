@@ -1,3 +1,4 @@
+<!--suppress HtmlUnknownTarget -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,7 +126,6 @@
 <script>
     // JavaScript to handle the custom carousel
     document.addEventListener('DOMContentLoaded', function () {
-        const carousel = document.querySelector('.carousel');
         const slides = document.querySelectorAll('.carousel-inner .item');
         let currentIndex = 0;
 

@@ -118,6 +118,9 @@ class UserAuthentication
         return $stmt->rowCount() > 0;
     }
 
+    /**
+     * @throws Exception
+     */
     public function generateLoginToken($email): void
     {
         global $pdo;

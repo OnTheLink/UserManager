@@ -1,5 +1,6 @@
+<!--suppress HtmlUnknownTarget -->
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
     <title><?= siteTitle ?> - Users</title>
     <link rel="stylesheet" href="<?= resourceURL ?>/css/usermanager.css">

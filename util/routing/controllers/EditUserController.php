@@ -7,6 +7,9 @@ use JetBrains\PhpStorm\NoReturn;
 
 class EditUserController extends AdminController
 {
+    /**
+     * @throws Exception
+     */
     public function edit(): void
     {
         $this->auth->authCookieLoggedInState();
@@ -27,7 +30,7 @@ class EditUserController extends AdminController
 
         foreach ($requiredFields as $field) {
             $values[$field] = $dataObject->{$field} ?? null;
-            if ($values[$field] === null) {
+            if (empty($values[$field])) {
                 $this->handleMissingFields($requiredFields, $values);
             }
         }

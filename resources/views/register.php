@@ -1,3 +1,4 @@
+<!--suppress HtmlUnknownTarget -->
 <?php
 // Check if an admin user already exists
 global $pdo;
@@ -13,7 +14,6 @@ $adminLimit = $_ENV["ADMIN_LIMIT"];
 
 $adminLimitReached = $rowAmount >= $adminLimit;
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

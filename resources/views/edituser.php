@@ -1,5 +1,6 @@
+<!--suppress HtmlUnknownTarget -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title><?= siteTitle ?> - Edit</title>
     <link rel="stylesheet" href="<?= resourceURL ?>/css/usermanager.css">
@@ -38,7 +39,7 @@
     $type = $row['type'];
     ?>
 
-    <form method="POST"> <!-- Replace with your actual update user script -->
+    <form method="POST" id="saveUserForm"> <!-- Replace with your actual update user script -->
         <!-- Hidden field to store the user ID -->
         <input type="hidden" name="userID" id="userID" value="<?= $userID ?>"> <!-- Replace with the actual user ID from the GET request -->
 

@@ -7,6 +7,9 @@ use JetBrains\PhpStorm\NoReturn;
 
 class NewUserController extends AdminController
 {
+    /**
+     * @throws Exception
+     */
     public function new(): void
     {
         $this->auth->authCookieLoggedInState();

@@ -1,5 +1,6 @@
+<!--suppress HtmlUnknownTarget -->
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
     <title><?= siteTitle ?> - Edit administrator</title>
     <link rel="stylesheet" href="<?= resourceURL ?>/css/usermanager.css">
@@ -35,7 +36,7 @@
     $username = $row['username'];
     ?>
 
-    <form method="POST"> <!-- Replace with your actual update user script -->
+    <form method="POST" id="saveAdminForm"> <!-- Replace with your actual update user script -->
         <!-- Hidden field to store the admin ID -->
         <input type="hidden" name="adminID" id="adminID" value="<?= $adminID ?>"> <!-- Replace with the actual user ID from the GET request -->
 

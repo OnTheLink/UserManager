@@ -74,18 +74,39 @@ function sendData(dataObject, url, successMessage, errorMessage) {
 }
 
 function createUser() {
+    // Validate form using basic HTML5 validation
+    const form = document.getElementById('newUserForm');
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+
     const adminPath = getAdminPath();
     const dataObject = getDataFromForm();
     sendData(dataObject, `${adminPath}new/saveNew`, "create", "create");
 }
 
 function save() {
+    // Validate form using basic HTML5 validation
+    const form = document.getElementById('saveUserForm');
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+
     const adminPath = getAdminPath();
     const dataObject = getDataFromForm(true);
     sendData(dataObject, `${adminPath}edit/save`, "edit", "edit");
 }
 
 function saveAdmin() {
+    // Validate form using basic HTML5 validation
+    const form = document.getElementById('saveAdminForm');
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+
     const adminPath = getAdminPath();
     const dataObject = getAdminDataFromForm();
     sendData(dataObject, `${adminPath}edit/saveAdmin`, "edit_admin", "edit_admin");
@@ -104,8 +125,6 @@ function remove(el) {
     const middleName = e.querySelector('.middleName').innerHTML;
     const lastName = e.querySelector('.lastName').innerHTML;
     const fullName = `${firstName} ${middleName} ${lastName}`;
-
-    const dataArray = [id, fullName];
 
     const placeholder_user = document.querySelector('.PLACEHOLDER-USER');
     const placeholder_id = document.querySelector('.PLACEHOLDER-ID');

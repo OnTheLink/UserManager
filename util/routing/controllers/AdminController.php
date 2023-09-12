@@ -75,7 +75,7 @@ abstract class AdminController
 
         $logMessage = 'Missing required fields, ';
         foreach ($fields as $field) {
-            $logMessage .= "$field: {$values[$field]}, ";
+            $logMessage .= "$field: $values[$field], ";
         }
         $logMessage = rtrim($logMessage, ', ');
 
@@ -158,7 +158,7 @@ abstract class AdminController
         $stmt->execute($values);
     }
 
-    protected function respondWithError(string $message, array $fields = []): void
+    #[NoReturn] protected function respondWithError(string $message, array $fields = []): void
     {
         header('Content-Type: application/json');
         echo json_encode(['error' => $message, 'fields' => $fields]);

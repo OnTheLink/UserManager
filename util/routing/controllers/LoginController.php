@@ -1,6 +1,7 @@
 <?php
 
 namespace UserManager\Util\Routing\Controllers;
+use JetBrains\PhpStorm\NoReturn;
 use UserManager\Util\Authentication\UserAuthentication;
 
 class LoginController
@@ -48,7 +49,7 @@ class LoginController
         }
     }
 
-    private function redirectTo(string $path): void
+    #[NoReturn] private function redirectTo(string $path): void
     {
         header('Location: ' . $_ENV['BASE_URL'] . $path);
         exit;

@@ -1,5 +1,6 @@
+<!--suppress HtmlUnknownTarget -->
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
     <title><?= siteTitle ?> - New user</title>
     <link rel="stylesheet" href="<?= resourceURL ?>/css/usermanager.css">
@@ -18,7 +19,7 @@
         <button class="secondary-button" onclick="navigate('admin')">Go back</button>
     </div>
 
-    <form method="POST"> <!-- Replace with your actual update user script -->
+    <form method="POST" id="newUserForm"> <!-- Replace with your actual update user script -->
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
 
