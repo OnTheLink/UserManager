@@ -31,7 +31,7 @@ class EditAdminController extends AdminController
 
         foreach ($requiredFields as $field) {
             $values[$field] = $dataObject->{$field} ?? null;
-            if ($values[$field] === null) {
+            if (empty($values[$field])) {
                 $this->handleMissingFields($requiredFields, $values);
             }
         }
