@@ -48,22 +48,14 @@ class NewUserController extends AdminController
     }
 
     public function edit(): void
-    {
-        // TODO: Implement edit() method.
-    }
+    {}
 
     public function editAdmin(): void
-    {
-        // TODO: Implement editAdmin() method.
-    }
+    {}
 
     public function save(): void
-    {
-        // TODO: Implement save() method.
-    }
+    {}
 
     public function saveAdmin(): void
-    {
-        // TODO: Implement saveAdmin() method.
-    }
+    {}
 }

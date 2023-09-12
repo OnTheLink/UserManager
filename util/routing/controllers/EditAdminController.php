@@ -64,22 +64,14 @@ class EditAdminController extends AdminController
     }
 
     public function edit(): void
-    {
-        // TODO: Implement edit() method.
-    }
+    {}
 
     public function new(): void
-    {
-        // TODO: Implement new() method.
-    }
+    {}
 
     public function save(): void
-    {
-        // TODO: Implement save() method.
-    }
+    {}
 
     public function saveNew(): void
-    {
-        // TODO: Implement saveNew() method.
-    }
+    {}
 }
