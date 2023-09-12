@@ -1,0 +1,19 @@
+{
+  "name": "mborijnland/phples1",
+  "description": "phples1",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "MishaOpstal",
+      "email": "6018369@mborijnland.nl"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "ext-mysqli": "*",
+    "bramus/router": "~1.6",
+    "ext-pdo": "*",
+    "ext-http": "*"
+  }
+}

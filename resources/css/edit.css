@@ -1,0 +1,52 @@
+/* Evil Edit User Page Styles */
+.user-manager {
+    color: #ff4500; /* Evil orange */
+}
+
+h2 {
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    background-color: #333333; /* Dark gray */
+    color: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+    border-color: #ff4500; /* Evil orange */
+}
+
+hr {
+    border-color: #ff4500;
+    margin: 20px 0;
+}
+
+.terminate-popup-buttons {
+    margin-top: 20px;
+}
+
+.terminate-popup-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

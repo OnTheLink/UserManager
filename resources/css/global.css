@@ -1,0 +1,13 @@
+.message-container {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: #fbd9df; /* Red-pink background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.message-container p, .message-container a, .message-container a:hover {
+    color: #ff0000;
+    margin: 0;
+}

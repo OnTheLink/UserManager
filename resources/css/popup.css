@@ -1,0 +1,82 @@
+/* Evil Popup Styles */
+.terminate-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    z-index: 9999; /* Ensure it's above other content */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminate-popup {
+    background-color: #1e1e1e; /* Dark gray */
+    color: #ff4500; /* Evil orange */
+    border: 4px solid #ff3300; /* Red border */
+    border-radius: 8px;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+.terminate-popup h3 {
+    font-size: 24px;
+}
+
+.terminate-popup hr {
+    border-color: #ff4500;
+}
+
+.terminate-popup p {
+    font-size: 16px;
+}
+
+.terminate-popup-buttons {
+    margin-top: 20px;
+}
+
+.terminate-popup-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.terminate-popup-buttons .button-success {
+    background-color: #00cc66;
+    color: #ffffff;
+}
+
+.terminate-popup-buttons .button-success:hover {
+    background-color: #00b359; /* Slightly darker green */
+}
+
+.terminate-popup-buttons .button-danger {
+    background-color: #ff3300;
+    color: #ffffff;
+}
+
+.terminate-popup-buttons .button-danger:hover {
+    background-color: #ff1a00; /* Slightly darker red */
+}
+
+/* Shake animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Apply the shake animation when clicking outside the popup */
+.terminate-popup-overlay.shake {
+    animation: shake 0.3s;
+}

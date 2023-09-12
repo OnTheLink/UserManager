@@ -1,0 +1,22 @@
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: -75px; /* Initially hidden above the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: top 0.5s; /* Smooth sliding animation */
+}
+
+/* Success Message Styles */
+.success-message {
+    background-color: #00cc66; /* Green */
+}
+
+/* Error Message Styles */
+.error-message {
+    background-color: #ff3300; /* Red */
+}
