@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php require_once __DIR__ . '/../components/FaviconMeta.php'; ?>
     <title><?= siteTitle ?> - Edit</title>
     <link rel="stylesheet" href="<?= resourceURL ?>/css/usermanager.css">
     <link rel="stylesheet" href="<?= resourceURL ?>/css/popup.css">
@@ -15,7 +18,7 @@
 
 <div class="user-manager">
     <div class="um-top">
-        <h2>User Manager - Edit</h2>
+        <h2><?= siteTitle ?> - Edit</h2>
         <button class="secondary-button" onclick="navigate('admin')">Go back</button>
     </div>
 

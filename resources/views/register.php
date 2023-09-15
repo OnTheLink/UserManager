@@ -19,7 +19,8 @@ $adminLimitReached = $rowAmount >= $adminLimit;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - DevLore User Manager</title>
+    <?php require_once __DIR__ . '/../components/FaviconMeta.php'; ?>
+    <title>Register - <?= siteTitle ?></title>
     <link rel="stylesheet" href="<?= resourceURL ?>/css/register.css">
 </head>
 <body>
